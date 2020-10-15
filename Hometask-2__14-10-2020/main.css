@@ -18,3 +18,11 @@ li{
 p{
     font-size: 1.1em;
 }
+img{
+    display: block;
+    margin: auto;
+    width: 65%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 1px;
+}
