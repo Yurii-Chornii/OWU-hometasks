@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 1000px;
+    height: 600px;
+    background-color: black;
+    padding: 5px;
+}
+header, footer, aside, section{float: left;}
+header, footer{
+    background-color: coral;
+    height: 20%;
+    width: 100%;
+    clear: both;
+}
+aside, section{
+    height: 60%;
+    width: 25%;
+}
+.leftAside{background-color: red;}
+.leftSection{background-color: green;}
+.rightSection{background-color: blue;}
+.rightAside{background-color: black;}
