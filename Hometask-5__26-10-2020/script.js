@@ -1,4 +1,4 @@
-// // task 1
+// // task 1 - присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
 // let str1 = 'hello';
 // let str2 = 'owu';
 // let str3 = 'com';
@@ -66,7 +66,7 @@
 // alert(boolean2);
 
 
-// // task 2
+// // task 2 - переопределить каждую переменную из задания 1 дав им произвольные значения Вывести каждую при помощи console.log , alert, document.write
 // str1 = 'hello world';
 // str2 = 'owuu';
 // str3 = 'comercial';
@@ -134,7 +134,7 @@
 // alert(boolean2);
 
 
-// // task 3
+// // task 3 - Создать 3 числовых и 3 стринговых константы. Вывести каждую при помощи console.log , alert, document.write
 // const strOne = 'string one';
 // const strTwo = 'string two';
 // const strThree = 'string three';
@@ -167,7 +167,7 @@
 // alert(numThree);
 
 
-// // task 4
+// // task 4  - при помощи 3х разных prompt() получить 3 слова которые являются вашими ФИО. Для фамилии имени и отчества создать разные переменные. Вывести каждую при помощи console.log , alert, document.write
 
 // let name = prompt('Enter your name!');
 // let surname = prompt('Enter your surname!');
@@ -186,12 +186,12 @@
 // alert(otchestvo);
 
 
-// task 5
+// task 5 - Взять переменные из задания 4 и сконкатенировать их в одной переменной person.
 
 // let person = surname + ' ' + name + ' ' + otchestvo;
 // console.log(person);
 
-// task 6
+// task 6 - Взять задние 4 и 5 и применить его к ФИО всех членов своей семьи.
 
 // let myName = prompt('Enter your name!');
 // let mySurname = prompt('Enter your surname!');
@@ -223,7 +223,7 @@
 // alert(myMother);
 
 
-// // task 7
+// // task 7 - при помощи prompt() получить 3 числа. Привести их к числовому типу при помощи +. вывести их в консоль.
 // let number1 = prompt();
 // let number2 = prompt();
 // let number3 = prompt();
@@ -231,6 +231,13 @@
 // number2 = +number2;
 // number3 = +number3;
 // console.log(number1, number2, number3);
+
+
+
+
+
+
+
 
 
 //   CLASS
