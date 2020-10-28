@@ -1,4 +1,4 @@
-// // task 1 - присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
+// task 1 - присвоить каждому из следующих значений свою переменную: 'hello','owu','com', 'ua', 1, 10, -999, 123, 3.14, 2.7, 16, true, false Вывести каждую при помощи console.log , alert, document.write
 // let str1 = 'hello';
 // let str2 = 'owu';
 // let str3 = 'com';
@@ -233,11 +233,122 @@
 // console.log(number1, number2, number3);
 
 
+// task 8 - при помощи prompt() получить 4 числа. Привести их к числовому типу при помощи parseInt. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+// let number1 = prompt('Введіть число:');
+// let number2 = prompt('Введіть число:');
+// let number3 = prompt('Введіть число:');
+// let number4 = prompt('Введіть число:');
+//
+// number1 = parseInt(number1);
+// number2 = parseInt(number2);
+// number3 = parseInt(number3);
+// number4 = parseInt(number4);
+//
+// let result = number1 + number2 + number3 + number4;
+// console.log(result);
 
 
+//task 9 - при помощи prompt()  получить 3 числа с плавающей точекой. при помощи parseFloat привести их к соответсвующему типу. Сложить их между собой записав результат в переменную result и вывести в консоль браузера
+
+// let number1 = prompt('Введіть число:');
+// let number2 = prompt('Введіть число:');
+// let number3 = prompt('Введіть число:');
+//
+// number1 = parseFloat(number1);
+// number2 = parseFloat(number2);
+// number3 = parseFloat(number3);
+//
+// let result = number1 + number2 + number3;
+// console.log(result);
 
 
+//task 10 - при помощи prompt()  получить 3 числа с плавающей точекой. Округлить их при помощи Math.round Сложить их между собой записав результат в переменную  и вывести в консоль браузера
+// let number1 = prompt('Введіть число:');
+// let number2 = prompt('Введіть число:');
+// let number3 = prompt('Введіть число:');
+// number1 = Math.round(parseFloat(number1));
+// number2 = Math.round(parseFloat(number2));
+// number3 = Math.round(parseFloat(number3));
+// let result = number1 + number2 + number3;
+// console.log(result);
 
+
+// task 11 - при помощи prompt()  получить 2 целых числа. Привести их к целочисленному типу. Первое число - это число которое будут возводить в степень. Второе число - это число которое является степенью. При помощи Math.pow возвести первое число в степень второго числа.
+// let number = prompt('Введіть число:');
+// let power = prompt('Введіть степінь:');
+// number = parseInt(number);
+// power = parseInt(power);
+// console.log(Math.pow(number, power));
+
+
+// task 12 - При помощи оператора опредеоения типа typeof определить типы следующих переменных и вывести их в консоль let a = 100; let b = '100'; let c = true; let d = undefined;
+// let a = 100;
+// let b = '100';
+// let c = true;
+// let d = undefined;
+// console.log(a, typeof a);
+// console.log(b, typeof b);
+// console.log(c, typeof c);
+// console.log(d, typeof d);
+
+// task 13 - Поставьте соответствующий оператор в выражениях что бы получился соответсвующий результат.
+// В одинаковых выражениях в задании не использовать два одинаковых оператора.
+// Каждое выражение вложить в свою переменную
+//     5 ? 6 -> true
+//     5 ? 6 -> false
+//     5 ? 6 -> false
+//     5 ? 6 -> false
+//     10 ? 10 -> true
+//     10 ? 10 -> true
+//     10 ? 10 -> false
+//     10 ? 10 -> false
+//     10 ? 10 -> false
+//     123 ? '123' -> false
+//     123 ? '123' -> true
+
+// let expression1 = 5 < 6;
+// let expression2 = 5 > 6;
+// let expression3 = 5 == 6;
+// let expression4 = 5 === 6;
+// let expression5 = 10 === 10;
+// let expression6 = 10 == 10;
+// let expression7 = 10 < 10;
+// let expression8 = 10 != 10;
+// let expression9 = 10 > 10;
+// let expression10 = 123 === '123';
+// let expression11 = 123 == '123';
+// console.log('5 < 6 ->', expression1);
+// console.log('5 > 6 ->', expression2);
+// console.log('5 == 6 ->', expression3);
+// console.log('5 === 6 ->', expression4);
+// console.log('10 === 10 ->', expression5);
+// console.log('10 == 10 ->', expression6);
+// console.log('10 < 10 ->', expression7);
+// console.log('10 != 10 ->', expression8);
+// console.log('10 > 10 ->', expression9);
+// console.log("123 === '123' ->", expression10);
+// console.log("123 == '123' ->", expression11);
+
+
+// Дополнительно:
+//     - Посмотрев на следюующие выражения, скажите, каков будет вывод в консоль
+// console.log(132 > 100 && 45 < 12 ); // false
+// console.log(34 > 33 && 23 < 90 ); // true
+// console.log(99 > 100 && 45 > 12 ); // false
+// console.log(132 > 100 || 45 < 12 ); //true
+// console.log(111 > 11 || 45 < 111 ); // true
+// console.log((111 > 11 || 45 < 111) && (132 > 100 || 45 < 12) ); // true
+// console.log((111 > 11 || 45 < 56) || (132 > 100 || 45 < 12) ); // true
+// console.log((132 > 100 && 45 < 12 ) && (132 > 100 || 45 < 12 ) ); // false
+// console.log((111 > 11 || 45 < 111) || (99 > 100 && 45 > 12 )); // true
+// console.log(!!'-1'); // true
+// console.log(!!-1); // true
+// console.log(!!'0'); // true
+// console.log(!!'null'); // true
+// console.log(!!'undefined'); // true
+// console.log(!!(3/'owu')); // false
+// console.log((111 > 11 || 45 < 111) ||  !!'0'); // true
+// console.log((!!111 == !!11 || 45 < 111) && (99 > 100 && 45 > 12 )); // false
 
 
 //   CLASS
@@ -405,3 +516,84 @@
 // let age = prompt("Скільки Вам років?");
 // alert('Доброго вечера ' + name + ' ' + surname + ', мои поздравления что вам ' + age);
 
+
+// =====================
+// ======ДОП============
+// =====================
+
+
+// 1. Три різних числа вводяться через prompt().
+//     За допомоги if else вивести іх в порядку зростання. (відсортувати по зростанню)
+// let num1 = +prompt('Type 1 number:');
+// let num2 = +prompt('Type 2 number:');
+// let num3 = +prompt('Type 3 number:');
+// if (num1 >= num2 && num2 >= num3) {
+//     console.log(num3 + ' ' + num2 + ' ' + num1);
+// } else if (num1 >= num2 && num2 <= num3) {
+//     console.log(num3 + ' ' + num2 + ' ' + num1);
+// }
+
+
+// 2.
+// Все параматры получаем с клавиатуры!!!!
+//     Имитируем поведение пешехода на перекстке.
+//     Если светофор зеленый - вывести "иди".
+//     Если светофор желтый - вывести "подожди".
+//     Если светофор красный - вывести "стой".
+//     Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+// let trafficLightsColor = prompt('Введить цвет светофора');
+// switch (trafficLightsColor){
+//     case "зеленый":
+//         alert('иди');
+//         break;
+//     case "желтый":
+//         alert('подожди');
+//         break;
+//     case "красный":
+//         alert('стой');
+//         break;
+//     default:
+//         alert('делай что хочешь!');
+// }
+//
+
+//     3
+// Все параметры получаем с клавиатуры!!!!(prompt , confirm)
+// Создать переменную isRoadClear которая характеризирует наличие на дороге машин.
+//     Улучшаем предыдущее задание.
+//     Если светофор зеленый и машин нет - вывести "иди".
+//     Если светофор зеленый и машины есть  - вывести подожди пока нарушители проедут".
+// Если светофор желтый и машины есть - вывести "жди".
+//     Если светофор желтый и машин нет - вывести "все рано жди".
+//     Если светофор красный и машин нет- вывести "стой все рано".
+//     Если светофор красный - и машины есть вывести "стой и жди".
+//     Если светофор в аварийном режиме вывести "делай что хочешь"!
+
+// let trafficLightsColor = prompt('Введить цвет светофора');
+// let isRoadClear = confirm('Чи є на дорозі автомобілі?');
+// switch (trafficLightsColor){
+//     case "зеленый":
+//         if(!isRoadClear){
+//             alert('иди');
+//         }else{
+//             alert('подожди пока нарушители проедут');
+//         }
+//         break;
+//     case "желтый":
+//         if(!isRoadClear){
+//             alert('все рано жди');
+//         }else{
+//             alert('подожди');
+//         }
+//         break;
+//     case "красный":
+//         if(!isRoadClear){
+//             alert('стой все равно');
+//         }else{
+//             alert('стой и жди');
+//         }
+//         break;
+//     default:
+//         alert('делай что хочешь!');
+}
