@@ -119,17 +119,106 @@
 
 
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-
-
+// for (let i = 0; i < 10; i++){
+//     console.log('iteranion ' + (i + 1));
+//     document.write('iteranion ' + (i + 1) + '<br>');
+// }
 
 
 // - Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 100; i++){
+//     console.log('iteranion ' + (i + 1));
+//     document.write('iteranion ' + (i + 1) + '<br>');
+// }
+
+
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 200; i += 2){
+//     console.log('iteranion ' + (i + 1));
+//     document.write('iteranion ' + (i + 1) + '<br>');
+// }
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-// - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// for (let i = 0; i < 100; i++){
+//     if (i % 2 === 0) {
+//         console.log('iteranion ' + (i));
+//         document.write('iteranion ' + (i) + '<br>');
+//     }
+// }
+
+
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+// for (let i = 0; i < 100; i++){
+//     if (i % 2 === 1) {
+//         console.log('iteranion ' + (i));
+//         document.write('iteranion ' + (i) + '<br>');
+//     }
+// }
+
+
 // - Відтворити роботу годинника, відрахувавши 2 хвилини (2 цикли! 1й - хвилини, 2й - секунди)
+// let minutes = 0;
+// let seconds = 0;
+// while (minutes < 2) {
+//     while (seconds < 60) {
+//         if (minutes < 10) {
+//             minutes = '0' + minutes;
+//         }
+//         if (seconds < 10) {
+//             seconds = '0' + seconds;
+//         }
+//         let clock = minutes + ':' + seconds;
+//         console.log(clock);
+//         minutes = parseInt(minutes);
+//         seconds = parseInt(seconds);
+//         seconds++
+//     }
+//     seconds = 0;
+//     minutes++
+// }
+
+
 // - Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
+// let hours = 0;
+// let minutes = 0;
+// let seconds = 0;
+// while (hours < 3) {
+//     while (minutes < 60) {
+//         while (seconds < 60) {
+//             if (hours < 10) {
+//                 hours = '0' + hours;
+//             }
+//             if (minutes < 10) {
+//                 minutes = '0' + minutes;
+//             }
+//             if (seconds < 10) {
+//                 seconds = '0' + seconds;
+//             }
+//             let clock = hours + ':' + minutes + ':' + seconds;
+//             console.log(clock);
+//             hours = parseInt(hours);
+//             minutes = parseInt(minutes);
+//             seconds = parseInt(seconds);
+//             seconds++
+//         }
+//         seconds = 0;
+//         minutes++
+//         if (hours === 2 && minutes === 21){
+//             minutes = 60;
+//         }
+//         if(hours === 2 && minutes === 20){
+//             seconds = 61;
+//         }
+//     }
+//     minutes = 0;
+//     hours++
+// }
+
+
+
+
+
 // Додатково
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 // - Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
