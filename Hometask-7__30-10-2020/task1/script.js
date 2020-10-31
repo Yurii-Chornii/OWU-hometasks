@@ -123,19 +123,19 @@
 //
 //
 // Дан массив:
-    let users = [
-        {name: 'vasya', age: 31, status: false},
-        {name: 'petya', age: 30, status: true},
-        {name: 'kolya', age: 29, status: true},
-        {name: 'olya', age: 28, status: false},
-        {name: 'max', age: 30, status: true},
-        {name: 'anya', age: 31, status: false},
-        {name: 'oleg', age: 28, status: false},
-        {name: 'andrey', age: 29, status: true},
-        {name: 'masha', age: 30, status: true},
-        {name: 'olya', age: 31, status: false},
-        {name: 'max', age: 31, status: true}
-    ];
+//     let users = [
+//         {name: 'vasya', age: 31, status: false},
+//         {name: 'petya', age: 30, status: true},
+//         {name: 'kolya', age: 29, status: true},
+//         {name: 'olya', age: 28, status: false},
+//         {name: 'max', age: 30, status: true},
+//         {name: 'anya', age: 31, status: false},
+//         {name: 'oleg', age: 28, status: false},
+//         {name: 'andrey', age: 29, status: true},
+//         {name: 'masha', age: 30, status: true},
+//         {name: 'olya', age: 31, status: false},
+//         {name: 'max', age: 31, status: true}
+//     ];
 // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
 // - статус Андрія
 // console.log(users[7].status);
@@ -166,34 +166,39 @@
 //
 // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // - отримує текст з параграфа з id "content"
+// let content = document.getElementById('content');
+// console.log(content.innerText);
+
 // - отримує текст з блоку з id "rules"
+// let rules = document.getElementById('rules');
+// console.log(rules.innerText);
+
 // - замініть текст параграфа з id 'content' на будь-який інший
+// content.innerText = 'bla bla';
+
 // - замініть текст параграфа з id 'rules' на будь-який інший
+// rules.innerText = 'lorem ipsum';
 // - змініть кожному елементу колір фону на червоний
+// let list = document.getElementsByTagName('ul')[0];
+// content.style.backgroundColor = 'red';
+// rules.style.backgroundColor = 'red';
+// list.style.backgroundColor = 'red';
 // - змініть кожному елементу колір тексту на синій
+// content.style.color = 'blue';
+// rules.style.color = 'blue';
+// list.style.color = 'blue';
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log
+// console.log(rules.classList)
 // - отримати всі елементи з класом fc_rules
+// let fcRules = document.getElementsByClassName('fc_rules');
+// console.log(fcRules);
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
+// for (const element of fcRules) {
+//     element.style.color = 'red';
+// }
 //
 // ====================
 // ====================
 // ====================
 //
-// =================
-// =====class=======
-// =================
-// Взяти файл template_2.html та працювати в ньому
-// - Напишіть код, який :
-// -- змінює колір тексту елемнту з ід main_header на будь-який інший
-// -- робить шириниу елементу ul 400 пікселів
-// -- робить шириниу всіх елементів з класом linkList шириною 50%
-// -- отримує текст який зберігається в елементі з класом listElement2
-// -- отримує всі елементи li та змінює ім колір фону на сірий
-// -- отримує всі елементи 'a' та додає їм клас anchor
-// -- отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3, змінює йому розмір тексту на 40 пікселів
-// -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-// -- отримує всі елементи 'sub-header' та змінює колір тексту у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
-// -- отримує елемент з класом content_1 та заміняє  в ньому тест на довільний. Текст отримати з prompt()
-// -- отримати елементи p та змінити їм paddin на довільне значення
-// -- отримати елементи з класом text2 та змінити їм текст на довільне значення
+
