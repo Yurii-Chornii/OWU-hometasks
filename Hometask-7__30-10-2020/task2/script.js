@@ -521,18 +521,18 @@ for (let car of cars2) {
 //
 // - Дано 2 масиви з рівною кількістю об'єктів.
 // Масиви:
-    let usersWithId = [
-        {id: 1, name: 'vasya', age: 31, status: false},
-        {id: 2, name: 'petya', age: 30, status: true},
-        {id: 3, name: 'kolya', age: 29, status: true},
-        {id: 4, name: 'olya', age: 28, status: false}
-];
-let citiesWithId = [
-    {user_id: 3, country: 'USA', city: 'Portland'},
-    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-    {user_id: 2, country: 'Poland', city: 'Krakow'},
-    {user_id: 4, country: 'USA', city: 'Miami'}
-];
+//     let usersWithId = [
+//         {id: 1, name: 'vasya', age: 31, status: false},
+//         {id: 2, name: 'petya', age: 30, status: true},
+//         {id: 3, name: 'kolya', age: 29, status: true},
+//         {id: 4, name: 'olya', age: 28, status: false}
+// ];
+// let citiesWithId = [
+//     {user_id: 3, country: 'USA', city: 'Portland'},
+//     {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+//     {user_id: 2, country: 'Poland', city: 'Krakow'},
+//     {user_id: 4, country: 'USA', city: 'Miami'}
+// ];
 // // З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
 // //    Записати цей об'єкт в новий масив
 // // Частковий приклад реультату:
@@ -556,21 +556,101 @@ let citiesWithId = [
 //
 //
 // - створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
-// - змінити цей текст використовуючи селектори id, class,  tag
-// - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+// let aside = document.getElementsByTagName('aside')[0];
+// let myBlock = document.getElementById('myBlock');
+// let myBlockClass = document.getElementsByClassName('myBlockClass')[0];
+// console.log(aside);
+// console.log(myBlock);
+// console.log(myBlockClass);
+//
+// // - змінити цей текст використовуючи селектори id, class,  tag
+// aside.style.fontSize = '25px';
+// myBlock.style.color = 'gray';
+// myBlockClass.style.fontWeight = 'bold';
+//
+// // - змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+// aside.style.width = '70%';
+// myBlock.style.height = '200px';
+// myBlockClass.style.padding = '10px';
+
 // - за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// let table = document.createElement('table');
+// document.body.appendChild(table);
+// let tr = document.createElement('tr');
+// let td = document.createElement('td');
+// let td1 = document.createElement('td');
+// let td2 = document.createElement('td');
+// td.innerText = 'lorem';
+// td1.innerText = 'ipsum';
+// td2.innerText = 'dolor';
+// table.appendChild(tr);
+// tr.appendChild(td);
+// tr.appendChild(td1);
+// tr.appendChild(td2);
+
+
 // - за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+// let table = document.createElement('table');
+// document.body.appendChild(table);
+// for (let i = 0; i < 10; i++) {
+//     let tr = document.createElement('tr');
+//     let td = document.createElement('td');
+//     let td1 = document.createElement('td');
+//     let td2 = document.createElement('td');
+//     td.innerText = 'lorem';
+//     td1.innerText = 'ipsum';
+//     td2.innerText = 'dolor';
+//     tr.appendChild(td);
+//     tr.appendChild(td1);
+//     tr.appendChild(td2);
+//     table.appendChild(tr);
+//
+// }
+
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+// let table = document.createElement('table');
+// document.body.appendChild(table);
+// for (let i = 0; i < 10; i++) {
+//     let tr = document.createElement('tr');
+//     for (let j = 0; j < 5; j++) {
+//         let td = document.createElement('td');
+//         tr.appendChild(td);
+//     }
+//     table.appendChild(tr);
+// }
+
 // - за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+// let table = document.createElement('table');
+// document.body.appendChild(table);
+// const n = +prompt('Enter rows count');
+// const m = +prompt('Enter cols count');
+// for (let i = 0; i < n; i++) {
+//     let tr = document.createElement('tr');
+//     for (let j = 0; j < m; j++) {
+//         let td = document.createElement('td');
+//         tr.appendChild(td);
+//     }
+//     table.appendChild(tr);
+// }
+
+
 //
 // --Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
 // - знайти всі елементі, які мають class
 // - знайти всі параграфи ,та змінити текст на hello oktenweb!
+// let paragraph = document.getElementsByTagName('p');
+// for (const p of paragraph) {
+//     p.innerText = 'hello oktenweb!';
+// }
 //     - знайти всі div та змінити ім колір на червоний
+// let div = document.getElementsByTagName('div');
+// for (const element of div) {
+//     element.style.backgroundColor = 'red';
+// }
 //
 // ============
 // ====class===
-//     ============
+// ============
 //
 //     - є сторінка rules.html. Контентом сторінки є заголовки та параграфи. Заголовки (h2) характеризують тему контенту яка вказана в параграфі.
 //     створити скрипт, котрий зчитує всі заголовки, та робить в блоці з id=content з них список(ul>li), який буде змістом того, що знаходиться на сторінці.
