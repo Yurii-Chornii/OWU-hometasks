@@ -129,12 +129,6 @@
 // console.log(summ(arrOne, arrTwo));
 
 
-
-
-
-
-
-
 // // - *** приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
 // let arr10 = [10,20,30,40,50,60,70];
 // let position = 3;
@@ -149,83 +143,199 @@
 // console.log(replaceElem(arr10, position));
 
 
-
-// - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
-// Двожина масиву від 2 до 100
-// Приклад
-// [1,0,6,0,3] => [1,6,3,0,0]
-// [0,1,2,3,4] => [1,2,3,4,0]
-// [0,0,1,0]   => [1,0,0,0]
-
-let myArray = [1,0,6,0,3];
-function sortZero(){
-
-}
-
-
+// // - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
+// // Двожина масиву від 2 до 100
+// // Приклад
+// // [1,0,6,0,3] => [1,6,3,0,0]
+// // [0,1,2,3,4] => [1,2,3,4,0]
+// // [0,0,1,0]   => [1,0,0,0]
+//
+// let myArray = [1, 0, 6, 0, 3];
+// function sortZero(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === 0) {
+//             arr.splice(i, 1);
+//             arr.push(0);
+//         }
+//         if (arr[0] === 0) {
+//             arr.splice(0, 1);
+//             arr.push(0);
+//         }
+//     }
+//     return arr;
+// }
+// console.log(sortZero(myArray));
 
 
 //
-// Створити функцію яка :
-// - Додає в боді блок з текстом "Hello owu"
-// - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
-// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
-// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
-// - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
-// Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
-// Для кожної властивості створити всередені блока автомоблія свій блок
+// // Створити функцію яка :
+// // - Додає в боді блок з текстом "Hello owu"
 //
-// (на основі минулого ДЗ)
-// **- функція приймає 2 масиви з рівною кількістю об'єктів та з'єднює в один об'єкт користувача та місто з відповідними "id" та "user_id",
-// та повертає масив цих з'єднаних об'єктів.
-// Приклад масивів:
-//             let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
-//             let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
-// Частковий приклад реультату:
+// function sayHelloInBody(){
+//     document.write('Hello OWU <br>');
+// }
+// sayHelloInBody();
+
+
+// // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+// const element = 'h1';
+// const text = 'Lorem ipsum dolor sit amet';
+// function addText(elem, text){
+//     document.body.innerHTML += `<${elem}>${text}</${elem}>`;
+// }
+// addText(element, text);
+// addText('p', text);
+// addText('span', text);
+
+
+// // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
+// let cars = [
+//     {model: 'BMW', power: 131, inSale: false},
+//     {model: 'Audi', power: 230, inSale: true},
+//     {model: 'VW', power: 159, inSale: true},
+//     {model: 'Seat', power: 128, inSale: false},
+//     {model: 'Skoda', power: 150, inSale: true},
+//     {model: 'Ford', power: 111, inSale: false},
+//     {model: 'Peugeot', power: 198, inSale: false}
+// ];
+// const box = document.getElementById('box');
+// function createOwnBlock(arr, elem){
+//     for (const car of arr) {
+//         const ownBlock = document.createElement('div');
+//         ownBlock.innerHTML += `<p>Model: ${car.model}</p><p>Power: ${car.power}</p><p>Is it in sale? ${car.inSale}</p><hr>`
+//         elem.appendChild(ownBlock);
+//     }
+// }
+// createOwnBlock(cars, box);
+
+
+// // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
+// // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали.
+// // Для кожної властивості створити всередені блока автомоблія свій блок
+// let cars1 = [
+//     {model: 'BMW', power: 131, inSale: false},
+//     {model: 'Audi', power: 230, inSale: true},
+//     {model: 'VW', power: 159, inSale: true},
+//     {model: 'Seat', power: 128, inSale: false},
+//     {model: 'Skoda', power: 150, inSale: true},
+//     {model: 'Ford', power: 111, inSale: false},
+//     {model: 'Peugeot', power: 198, inSale: false}
+// ];
+// const box1 = document.getElementById('box');
+// function createOwnBlock(arr, elem){
+//     for (const car of arr) {
+//         const ownBlock = document.createElement('div');
+//         const modelBlock = document.createElement('div');
+//         const powerBlock = document.createElement('div');
+//         const inSaleBlock = document.createElement('div');
+//         modelBlock.innerHTML += `Model: ${car.model}`;
+//         powerBlock.innerHTML += `Power: ${car.power}`;
+//         inSaleBlock.innerHTML += `Is it in sale? ${car.inSale}`;
+//         ownBlock.appendChild(modelBlock);
+//         ownBlock.appendChild(powerBlock);
+//         ownBlock.appendChild(inSaleBlock);
+//         ownBlock.innerHTML += "<hr>";
+//         elem.appendChild(ownBlock);
+//     }
+// }
+// createOwnBlock(cars1, box1);
+
+
+//
+// // (на основі минулого ДЗ)
+// // **- функція приймає 2 масиви з рівною кількістю об'єктів та з'єднює в один об'єкт користувача та місто з відповідними "id" та "user_id",
+// // та повертає масив цих з'єднаних об'єктів.
+// // Приклад масивів:
+// //             let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+// //           let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+// // Частковий приклад реультату:
+// //
+//
+// let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false}];
+//
+// let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'}];
+//
+// function mergeObjects(usersArr, citiesArr){
+//     let usersWithCities = [];
+//     for (let i = 0; i < usersArr.length; i++) {
+//         usersWithCities[i] = usersArr[i];
+//         for (const cityObj of citiesArr) {
+//             if (cityObj.user_id === usersWithCities[i].id){
+//                 usersWithCities[i].address = cityObj;
+//             }
+//         }
+//
+//     }
+//     return usersWithCities;
+// }
+// console.log(mergeObjects(usersWithId, citiesWithId));
+
+
 //
 //
+// // ***- беремо завдання з правилами з укроку №3 :
+// // Та робимо це функцією.При цьому правила отримувати через аргумент.
+// // "Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
+// // При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
+// // Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+// //
+// let rules = [
+//     {
+//         title: 'Первое правило Бойцовского клуба.',
+//         body: 'Никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Второе правило Бойцовского клуба.',
+//         body: 'Никогда никому не рассказывать о Бойцовском клубе.'
+//     },
+//     {
+//         title: 'Третье правило Бойцовского клуба.',
+//         body: 'В схватке участвуют только двое.'
+//     },
+//     {
+//         title: 'Четвертое правило Бойцовского клуба.',
+//         body: 'Не более одного поединка за один раз.'
+//     },
+//     {
+//         title: 'Пятое правило Бойцовского клуба.',
+//         body: 'Бойцы сражаются без обуви и голые по пояс.'
+//     },
+//     {
+//         title: 'Шестое правило Бойцовского клуба.',
+//         body: 'Поединок продолжается столько, сколько потребуется.'
+//     },
+//     {
+//         title: 'Седьмое правило Бойцовского клуба.',
+//         body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
+//     },
+//     {
+//         title: 'Восьмое и последнее правило Бойцовского клуба.',
+//         body: 'Новичок обязан принять бой.'
+//     },
 //
-// ***- беремо завдання з правилами з укроку №3 :
-// Та робимо це функцією.При цьому правила отримувати через аргумент.
-// "Є масив котрий характеризує правила. Створити скрипт який ітерує цей масив, та робить з кожне правило в окремому блоці.
-// При цому в блоці, номер правила записати в свій блок, текст правила записати в свій окремий блок.
-// Результатом відпрацювання скріпта повинна бути структура яка міститься в блоці wrap файла rule.html
+// ];
 //
-// 			let rules = [
-// 				{
-// 					title: 'Первое правило Бойцовского клуба.',
-// 					body: 'Никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Второе правило Бойцовского клуба.',
-// 					body: 'Никогда никому не рассказывать о Бойцовском клубе.'
-// 				},
-// 				{
-// 					title: 'Третье правило Бойцовского клуба.',
-// 					body: 'В схватке участвуют только двое.'
-// 				},
-// 				{
-// 					title: 'Четвертое правило Бойцовского клуба.',
-// 					body: 'Не более одного поединка за один раз.'
-// 				},
-// 				{
-// 					title: 'Пятое правило Бойцовского клуба.',
-// 					body: 'Бойцы сражаются без обуви и голые по пояс.'
-// 				},
-// 				{
-// 					title: 'Шестое правило Бойцовского клуба.',
-// 					body: 'Поединок продолжается столько, сколько потребуется.'
-// 				},
-// 				{
-// 					title: 'Седьмое правило Бойцовского клуба.',
-// 					body: 'Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок окончен.'
-// 				},
-// 				{
-// 					title: 'Восьмое и последнее правило Бойцовского клуба.',
-// 					body: 'Новичок обязан принять бой.'
-// 				},
+// function createBlocks(rulesArr) {
+//     const wrapper = document.createElement('div');
+//     wrapper.setAttribute('id', 'wrap');
+//     for (let i = 0; i < rulesArr.length; i++) {
+//         const ruleBox = document.createElement('div');
+//         ruleBox.setAttribute('class', `rules rule${i+1}`);
+//         const titleBox = document.createElement('h2');
+//         titleBox.innerHTML += rulesArr[i].title;
+//         ruleBox.appendChild(titleBox);
+//         const bodyBox = document.createElement('p');
+//         bodyBox.innerHTML += rulesArr[i].body;
+//         ruleBox.appendChild(bodyBox);
 //
-// 			];
+//         wrapper.appendChild(ruleBox);
+//     }
+//     document.body.appendChild(wrapper);
+// }
+// createBlocks(rules);
+
+
 // "
 //
 // ===========додаткове від віктора========
