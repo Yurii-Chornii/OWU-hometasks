@@ -56,16 +56,32 @@
 // // - створити функцію яка повертає найбільше число з масиву
 // let arr3 = [10, 30, 22, 45, 2];
 // function retMaxValue(array) {
-//     return Math.max(...array);
+//     let maxValue = 'чисел не знайдено(';
+//     for (let i = 0; i<array.length; i++) {
+//          if (typeof array[i] === "number") maxValue = array[i];
+//     }
+//     for (let i = 0; i<array.length; i++){
+//         if (maxValue < array[i]) maxValue = array[i];
+//     }
+//     return maxValue;
 // }
 // console.log(retMaxValue(arr3));
 
 // // - створити функцію яка повертає найменьше число з масиву
-// let arr4 = [10, 30, 22, 45, 2];
-// function retMinValue(array) {
-//     return Math.min(...array);
+// let arr3 = [10, 30, 22, 45, 2];
+// function retMaxValue(array) {
+//     let maxValue = 'чисел не знайдено(';
+//     for (let i = 0; i<array.length; i++) {
+//         if (typeof array[i] === "number"){
+//             maxValue = array[i];
+//         }
+//     }
+//     for (let i = 0; i<array.length; i++){
+//         if (maxValue > array[i]) maxValue = array[i];
+//     }
+//     return maxValue;
 // }
-// console.log(retMinValue(arr4));
+// console.log(retMaxValue(arr3));
 
 // // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
 // let arr5 = [10, 30, 22, 45, 2];
@@ -93,18 +109,27 @@
 
 
 // // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
-// let arr7 = [{name: 'yura', age: 25}, {age: 22}, {location: 'lviv', wife: false}, {wife: true}];
+// let arr7 = [{name: 'yura', age: 25}, {age: 22}, {location: 'lviv', wife: false}, {wife: true}, 787, 'bla bla', [12,2]];
 // function arrLength(arr){
-//     return arr.length;
+//     let result = 0;
+//     for (const element of arr) {
+//         if (typeof element === 'object' && !Array.isArray(element)){
+//             result++;
+//         }
+//     }
+//     return result
 // }
 // console.log(arrLength(arr7));
 
 // // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
-// let arr8 = [{name: 'yura', age: 25}, {age: 22}, {location: 'lviv', wife: false}, {wife: true, location: 'lviv'}];
+// let arr8 = [{name: 'yura', age: 25}, {age: 22}, {location: 'lviv', wife: false}, {wife: true, location: 'lviv'}, 7, 'htll'];
 // function objKeysCount(arr){
 //     let result = 0;
 //     for (const obj of arr) {
-//         result += Object.keys(obj).length;
+//         if (typeof obj === 'object'){
+//             result += Object.keys(obj).length;
+//         }
+//
 //     }
 //     return result;
 // }
@@ -150,17 +175,15 @@
 // // [0,1,2,3,4] => [1,2,3,4,0]
 // // [0,0,1,0]   => [1,0,0,0]
 //
-// let myArray = [1, 0, 6, 0, 3];
+// let myArray = [0,0,1,0,0,0,0,0,1,0,0,0];
 // function sortZero(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         if (arr[i] === 0) {
-//             arr.splice(i, 1);
-//             arr.push(0);
+//     let i = 0;
+//     while (i < myArray.length){
+//         if (myArray.indexOf(0) !== -1){
+//             let zero = myArray.splice(myArray.indexOf(0), 1);
+//             myArray.push(zero[0]);
 //         }
-//         if (arr[0] === 0) {
-//             arr.splice(0, 1);
-//             arr.push(0);
-//         }
+//         i++
 //     }
 //     return arr;
 // }
