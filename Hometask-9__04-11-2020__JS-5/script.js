@@ -130,10 +130,8 @@
 // console.log(option);
 // const select = new Tag('select', 'Тег <select> позволяет создать элемент интерфейса в виде раскрывающегося списка, а также список с одним или множественным выбором, как показано далее. Конечный вид зависит от использования атрибута size тега <select>, который устанавливает высоту списка.', 'accesskey', 'Позволяет перейти к списку с помощью некоторого сочетания клавиш.','form', 'Связывает список с формой.');
 // console.log(select);
-
-
 // ==============================================
-//
+
 //
 //
 // ==============================================
@@ -143,6 +141,40 @@
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+//
+// const car = {
+//     model: 'Octavia',
+//     producer: 'Skoda',
+//     year: 2012,
+//     maxSpeed: 200,
+//     engineCapacity: 2,
+//     drive: function (){
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
+//     },
+//     info: function (){
+//         console.log(`Інформація про автомобіль: \n Виробник: ${this.producer} \n Модель: ${this.model} \n Рік випуску: ${this.year} \n Максимальна швидкість: ${this.maxSpeed} \n Об'єм двигуна: ${this.engineCapacity}`);
+//     },
+//     increaseMaxSpeed: function (newSpeed){
+//         this.maxSpeed += newSpeed;
+//         // console.log(this.maxSpeed);
+//     },
+//     changeYear: function (newValue){
+//         this.year = newValue;
+//         // console.log(this.year);
+//     },
+//     addDriver: function (driver){
+//         this.driver = driver;
+//         // console.log(this.driver);
+//     }
+// }
+//
+// car.drive();
+// car.info();
+// car.increaseMaxSpeed(10);
+// car.changeYear(2014);
+// car.addDriver({name: 'yura', age: 22});
+// // console.log(car);
+
 // ==============================================
 //
 //
@@ -154,6 +186,43 @@
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
 // ==============================================
+//
+// function Car(model, producer, year, maxSpeed, engineCapacity){
+//         this.model = model;
+//         this.producer = producer;
+//         this.year = year;
+//         this.maxSpeed = maxSpeed;
+//         this.engineCapacity = engineCapacity;
+//         this.drive = function (){
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
+//         };
+//         this.info = function(){
+//             console.log(`Інформація про автомобіль: \n Виробник: ${this.producer} \n Модель: ${this.model} \n Рік випуску: ${this.year} \n Максимальна швидкість: ${this.maxSpeed} \n Об'єм двигуна: ${this.engineCapacity}`);
+//         };
+//         this.increaseMaxSpeed = function (newSpeed){
+//             this.maxSpeed += newSpeed;
+//             console.log(this.maxSpeed);
+//         };
+//         this.changeYear = function (newValue){
+//             this.year = newValue;
+//             console.log(this.year);
+//         };
+//         this.addDriver = function (driver){
+//             this.driver = driver;
+//             console.log(this.driver);
+//         }
+// }
+// let myCar = new Car('Octavia', 'Skoda', 2012, 200, 2);
+// myCar.info();
+// myCar.drive();
+// myCar.addDriver({name: 'yura', age: 22});
+// myCar.increaseMaxSpeed(20);
+// myCar.changeYear(2018);
+// console.log(myCar);
+
+
+
+
 //
 // ==============================================
 //     - Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
