@@ -221,8 +221,6 @@
 // console.log(myCar);
 
 
-
-
 //
 // ==============================================
 //     - Створити клас який дозволяє створювати об'єкти car, з властивостями модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -231,6 +229,44 @@
 // -- increaseMaxSpeed (newSpeed) - яка підвищує значення максимальної швидкості на значення newSpeed
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів, і доавляет його в поточний об'єкт car
+
+// class Car{
+//     constructor(model, producer, year, maxSpeed, engineCapacity) {
+//         this.model = model;
+//         this.producer = producer;
+//         this.year = year;
+//         this.maxSpeed = maxSpeed;
+//         this.engineCapacity = engineCapacity;
+//
+//     }
+//     drive(){
+//         console.log(`їдемо зі швидкістю ${this.maxSpeed} км на годину`);
+//     };
+//     info(){
+//         console.log(`Інформація про автомобіль: \n Виробник: ${this.producer} \n Модель: ${this.model} \n Рік випуску: ${this.year} \n Максимальна швидкість: ${this.maxSpeed} \n Об'єм двигуна: ${this.engineCapacity}`);
+//     };
+//     increaseMaxSpeed(newSpeed){
+//         this.maxSpeed += newSpeed;
+//         console.log(this.maxSpeed);
+//     };
+//     changeYear(newValue){
+//         this.year = newValue;
+//         console.log(this.year);
+//     };
+//     addDriver(driver){
+//         this.driver = driver;
+//         console.log(this.driver);
+//     }
+// }
+// let myCar = new Car('Octavia', 'Skoda', 2012, 200, 2);
+// myCar.info();
+// myCar.drive();
+// myCar.addDriver({name: 'yura', age: 22});
+// myCar.increaseMaxSpeed(20);
+// myCar.changeYear(2018);
+// console.log(myCar);
+
+
 // ==============================================
 //
 //
@@ -239,6 +275,34 @@
 // --Створити 10 попелюшок , покласти їх в масив
 // --Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
 // -- за допоиоги циклу знайти яка попелюшка повинна бути з принцом
+
+// class Popelushka {
+//     constructor(name, age, legSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.legSize = legSize;
+//     }
+// }
+//
+// const popelArr = [new Popelushka('Sveta', 20, 37), new Popelushka('Olena', 21, 38), new Popelushka('Viktoria', 19, 37), new Popelushka('Natasha', 18, 36), new Popelushka('Katya', 23, 39), new Popelushka('Anastasia', 22, 38), new Popelushka('Ira', 20, 37), new Popelushka('Solia', 24, 39), new Popelushka('Sophia', 20, 38), new Popelushka('Marta', 18, 37)];
+//
+// class Prince {
+//     constructor(name, age, shoesSize) {
+//         this.name = name;
+//         this.age = age;
+//         this.shoesSize = shoesSize;
+//     }
+// }
+//
+// const princeOlexandr = new Prince('Olexandr', 22, 36);
+//
+// for (const popelush of popelArr) {
+//     if (popelush.legSize === princeOlexandr.shoesSize) {
+//         console.log(`Це туфелька попелюшки за іменем ${popelush.name}!`);
+//     }
+// }
+
+
 // ==============================================
 //
 //
@@ -248,4 +312,28 @@
 // --Створити 10 попелюшок , покласти їх в масив
 // --Сторити об'єкт типу "принц" за допомоги функції конструктора з полями ім'я, вік, туфелька яку він знайшов, та функцію "пошук попелюшки"
 // -- функція повинна приймати масив попелюшок, та шукає ту котра йому підходить
+
+// function Popelushka(name, age, legSize) {
+//     this.name = name;
+//     this.age = age;
+//     this.legSize = legSize;
+// }
+//
+// function Prince(name, age, shoesSize) {
+//     this.name = name;
+//     this.age = age;
+//     this.shoesSize = shoesSize;
+//     this.findPopelushka = function (arr){
+//         for (const girl of arr) {
+//             (girl.legSize === this.shoesSize) ? console.log(`Це туфелька попелюшки за іменем ${girl.name}!`) : null;
+//         }
+//     }
+// }
+//
+// const princeOlexandr = new Prince('Olexandr', 22, 36);
+//
+// const girlsArray = [new Popelushka('Sveta', 20, 37), new Popelushka('Olena', 21, 38), new Popelushka('Viktoria', 19, 37), new Popelushka('Natasha', 18, 36), new Popelushka('Katya', 23, 39), new Popelushka('Anastasia', 22, 38), new Popelushka('Ira', 20, 37), new Popelushka('Solia', 24, 39), new Popelushka('Sophia', 20, 38), new Popelushka('Marta', 18, 37)];
+//
+// princeOlexandr.findPopelushka(girlsArray);
+
 // ==============================================
