@@ -337,3 +337,67 @@
 // princeOlexandr.findPopelushka(girlsArray);
 
 // ==============================================
+
+
+//
+//
+//
+//
+//
+// // додаткове завдання від Віті
+//
+// Створити обєкт автомобіля з полями:
+//     Марка автомобля, потужність двигуна, власник, ціна, рік випуску.
+//     Власник автомобіля теж має бути обєкт, у якого є поля
+// Імя, вік, стаж водіння.
+//     Створити не менше 7 та не більше 20 машинок.
+//     Зробили половину автопарку ремонт мотору, що збільшить потужність автомобілів на 10% (переприсвоєння змінної потужності).
+// На відремонтовані автомобілі найняти нових водіїв (переприсвоїти змінну водій).
+// Для початку вкладіть всі наші створені автомобілі в масив cars.
+//     Далі необхідно брати кожну другу машинку (цикл з кроком в 2), та робити їй підвищення потужності двигуна на 10% та ціну на 5%
+// Після того зробити перевірку досвіду ВСІХ наших водіїв. Якщо досвід водія менший за 5 років, але його вік більший за 25, то необідно відправити його на курси підвищення кваліфікації, що збільшить йому досвід на 1 рік.
+//     Також спробуйте порахувати суму, яку потрібно потратити для покупки всіх цих авто в циклі
+
+
+// class Car {
+//     constructor(model, power, owner, price, year) {
+//         this.model = model;
+//         this.power = power;
+//         this.owner = owner;
+//         this.price = price;
+//         this.year = year;
+//     }
+// }
+//
+// class CarOwner {
+//     constructor(name, age, drivingExperience) {
+//         this.name = name;
+//         this.age = age;
+//         this.drivingExperience = drivingExperience;
+//     }
+// }
+//
+// const cars = [
+//     new Car('BMW', 400, new CarOwner('Yura', 22, 4), 70000, 2020),
+//     new Car('Seat', 130, new CarOwner('Sergiy', 26, 3), 15000, 2018),
+//     new Car('VW', 170, new CarOwner('Valentyn', 23, 5), 10000, 2012),
+//     new Car('Skoda', 150, new CarOwner('Slavik', 43, 25), 12000, 2013),
+//     new Car('Renault', 110, new CarOwner('Pasha', 22, 4), 7000, 2011),
+//     new Car('Kadilac', 300, new CarOwner('Alex', 30, 12), 47000, 2015),
+//     new Car('Nissan', 160, new CarOwner('Roman', 22, 4), 17000, 2013),
+//     new Car('Opel', 140, new CarOwner('Ruslan', 22, 4), 11000, 2013),
+// ];
+//
+// for (let i = 0; i < cars.length; i += 2) {
+//     cars[i].power = Math.round(cars[i].power * 1.1);
+//     cars[i].price = Math.round(cars[i].price * 1.05);
+//     cars[i].owner = new CarOwner(`newCarOwner${i}`, Math.round(Math.random() * (40 - 25) + 25), Math.round(Math.random() * (7 - 5) + 5));
+// }
+//
+// let totalCarsPrice = 0;
+//
+// for (const car of cars) {
+//     (car.owner.age > 25 && car.owner.drivingExperience < 5) ? car.owner.drivingExperience += 1 : null;
+//     totalCarsPrice += car.price;
+// }
+
