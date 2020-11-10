@@ -169,13 +169,45 @@ let cars = [
 // }));
 
 // - двигун більше 3х літрів + виробник субару
+// console.log(cars.filter(value => {
+//     if(value.producer === 'subaru' && value.volume > 3) return value;
+// }));
+
 // - сили більше ніж 300
+// console.log(cars.filter(value => {
+//     if(value.power > 300) return value;
+// }));
+
 // - сили більше ніж 300 + виробник субару
+// console.log(cars.filter(value => {
+//     if(value.power > 300 && value.producer === 'subaru') return value;
+// }));
+
 // - мотор серіі ej
+// console.log(cars.filter(value => {
+//     if(value.engine.startsWith('ej')) return value;
+// }));
+
 // - сили більше ніж 300 + виробник субару + мотор серіі ej
+// console.log(cars.filter(value => {
+//     if(value.engine.startsWith('ej') && value.power > 300 && value.producer === 'subaru') return value;
+// }));
+
 // - двигун меньше 3х літрів + виробник мерседес
+// console.log(cars.filter(value => {
+//     if(value.volume < 3 && value.producer === 'mercedes') return value;
+// }));
+
 // - двигун більше 2л + сили більше 250
+// console.log(cars.filter(value => {
+//     if(value.volume > 2 && value.power > 250) return value;
+// }));
+
 // - сили більше 250  + виробник бмв
+// console.log(cars.filter(value => {
+//     if(value.producer === 'bmw' && value.power > 250) return value;
+// }));
+
 //
 //
 //
