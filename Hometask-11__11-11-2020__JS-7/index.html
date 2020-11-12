@@ -19,7 +19,7 @@
 <div class="border" id="task3">
     <form>
         <label>Введіть ваш вік
-            <input type="number" name="age" value="18">
+            <input type="number" min="5" name="age" value="18">
         </label>
         <button type="submit">Підтвердити</button>
     </form>
@@ -35,7 +35,52 @@
         <li>Contacts</li>
     </ul>
 </nav>
-
+<div class="border" id="task6">
+    <h5>Form 1</h5>
+    <form name="form1">
+        <input type="text" name="input1" placeholder="form1 input1">
+        <input type="text" name="input2" placeholder="form1 input2">
+    </form>
+    <h5>Form 2</h5>
+    <form name="form2">
+        <input type="text" name="input1" placeholder="form2 input1">
+        <input type="text" name="input2"placeholder="form2 input2">
+    </form>
+    <hr>
+    <button>Read ang show these inputs info</button>
+</div>
+<div class="border" id="task7">
+    <h5>створення таблиці</h5>
+</div>
+<div class="border" id="task7dop">
+    <h5>створення таблиці через інпути</h5>
+    <form name="createTableForm">
+        <label>Кількість рядків
+            <input type="number" min="1" name="rows" placeholder="к-сть рядків">
+        </label>
+        <label>Кількість стовпців
+            <input type="number" min="1" name="cols" placeholder="к-сть стовпців">
+        </label>
+        <label>Текст
+            <input type="text" name="text" placeholder="наповнення">
+        </label>
+        <button>Згенерувати табличку</button>
+    </form>
+</div>
+<div class="border">
+    <div id="sliderWrapper">
+        <div id="previousSlide" class="sliderArrow"><i class="fas fa-angle-left"></i></div>
+        <div id="nextSlide" class="sliderArrow"><i class="fas fa-angle-right"></i></div>
+        <img alt="photo">
+    </div>
+</div>
+<div class="border" id="fuckngTask">
+    <h5>Тільки не вводь матюки</h5>
+    <form name="fuck">
+        <input type="text" name="textInput">
+    </form>
+    <button>Submit</button>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

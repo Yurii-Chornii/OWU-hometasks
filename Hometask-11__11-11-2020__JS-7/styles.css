@@ -2,6 +2,7 @@
     border: 1px solid gray;
     padding: 15px;
     margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 nav button {
     padding: 5px;
@@ -10,9 +11,43 @@ nav button {
     width: 50px;
     margin-left: 20px;
 }
-nav{
-    transition: .3s;
-}
 nav ul{
     display: none;
+}
+.active{
+    display: block;
+}
+table{
+    border-collapse: collapse;
+}
+.table-border{
+    border: 1px solid gray;
+}
+#sliderWrapper{
+    height: 80vh;
+    max-width: 1080px;
+    position: relative;
+    overflow: hidden;
+}
+#sliderWrapper img{
+    width: 100%;
+}
+.sliderArrow{
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    text-shadow: 0 0 10px white;
+}
+.sliderArrow:hover{
+    cursor: pointer;
+}
+#previousSlide{
+    left: 0;
+}
+#nextSlide{
+    right: 0;
 }

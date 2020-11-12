@@ -12,29 +12,84 @@ document.querySelector('#task3 button').addEventListener('click', (ev) => {
 //
 // - Создайте меню, которое раскрывается/сворачивается при клике
 document.querySelector('nav button').addEventListener('click', function (evt)  {
-    // document.querySelector('nav ul').style.display
-    // classList.toggle('fa-angle-up')
+    document.querySelector('nav ul').classList.toggle('active');
+    document.querySelector('nav i').classList.toggle('fa-angle-up');
 });
 //
 // - Создать список комментариев , пример объекта коментария - {title : 'lorem', body:'lorem ipsum dolo sit ameti'}.
 //     Вывести список комментариев в документ, каждый в своем блоке.
 //     Добавьте каждому комментарию по кнопке для сворачивания его body.
-//
+const comments = [{title : 'lorem', body:'lorem ipsum dolo sit ameti'}, {title : 'consectetur', body:'adipisicing elit. Ab ad autem, blanditiis'}, {title : 'delectus', body:'doloribus eos exercitationem fugit'}, {title : 'laboriosam', body:'magnam minus mollitia, non odit quas quibusdam quis suscipit unde, voluptatibus!'}];
+for (const comment of comments) {
+    const block = document.createElement('div');
+    block.classList.add('border');
+    const commentTitle = document.createElement('h4');
+    commentTitle.innerText = comment.title;
+    block.appendChild(commentTitle);
+    const commentBody = document.createElement('p');
+    commentBody.innerText = comment.body;
+    commentBody.style.display = 'block';
+    block.appendChild(commentBody);
+    const button = document.createElement('button');
+    block.appendChild(button);
+    button.innerText = 'comment body toggler';
+    button.addEventListener('click', ev => {
+        commentBody.style.display = commentBody.style.display === 'block' ? 'none' : 'block';
+    });
+    document.body.appendChild(block);
+}
+
+
+// //task6
 // - створити 2 форми  по 2 інпути в кожній. ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих 2х форм.
 //     Кнопка повинна лежати за межами форм (Щоб ьуникнути  перезавантаження сторінки)
 // Доступ до інпутів через Forms API. Отже дайте формі та інпутам всі необхідні атрибути.
+document.querySelector('#task6 button').addEventListener('click', ev => console.log(`Form 1, input 1 text: ${document.forms.form1.input1.value} \n Form 1, input 2 text: ${document.forms.form1.input2.value} \n Form 2, input 1 text: ${document.forms.form2.input1.value} \n Form 2, input 2 text: ${document.forms.form2.input2.value}`));
 //
 // - Створити функцію, яка генерує таблицю.
 //     Перший аргумент визначає кількість строк.
 //     Другий параметр визначає кліькіть ячеєк в кожній строці.
 //     Третій параметр визначає елемент в який потрібно таблицю додати.
-//
-//
+function createTable(rows, cols, element){
+    const table = document.createElement('table');
+    for (let i = 0; i < rows; i++) {
+        const tr =document.createElement('tr');
+        for (let j = 0; j < cols; j++) {
+            const td = document.createElement('td');
+            td.classList.add('table-border');
+            td.innerText = element;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+    return table;
+}
+document.querySelector('#task7').appendChild(createTable(5, 5, 'bla'))
 // - Створити 3 инпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
 // (Додатковачастина для завдання)
+document.querySelector('#task7dop button').addEventListener('click', ev => {
+    ev.preventDefault();
+    document.querySelector('#task7dop').appendChild(createTable(document.forms.createTableForm.rows.value, document.forms.createTableForm.cols.value, document.forms.createTableForm.text.value))
+})
+
+
+
 //
 // - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+let iterator = 0;
+function setPhotoSrc(direction){
+    const photos = ['http://oboi-dlja-stola.ru/file/19702/760x0/16:9/peugeot-landtrek.jpg', 'http://oboi-dlja-stola.ru/file/19276/760x0/16:9/bentley-bentayga-hybrid.jpg', 'http://oboi-dlja-stola.ru/file/17910/760x0/16:9/%D0%9D%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-bmw-z4.jpg', 'http://oboi-dlja-stola.ru/file/14851/760x0/16:9/porsche-mission-e.jpg'];
+    if (direction === 'right') iterator++;
+    if (direction === 'left') iterator--;
+    if (iterator === photos.length) iterator = 0;
+    if (iterator === -1) iterator = photos.length -1;
+    document.querySelector('#sliderWrapper img').setAttribute('src', photos[iterator]);
+}
+setPhotoSrc();
+document.querySelector('#previousSlide').addEventListener('click', () => setPhotoSrc('left'));
+document.querySelector('#nextSlide').addEventListener('click', () => setPhotoSrc('right'));
+
 //
 //
 // - Сворити масив не цензцрних слів.
@@ -43,12 +98,22 @@ document.querySelector('nav button').addEventListener('click', function (evt)  {
 // кинути алерт з попередженням.
 //     Перевірку робити при натисканні на кнопку
 //
-//
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
+
+//підходить зразу під 2 завдання
+const fuckingWords =['сука', 'лох', 'рагуль', 'дура', 'дурак'];
+document.querySelector('#fuckngTask button').addEventListener('click', () => {
+    let findBadWord = -1;
+    for (const word of fuckingWords) {
+        if (findBadWord < 0) findBadWord = document.forms.fuck.textInput.value.indexOf(word);
+    }
+    alert(findBadWord === -1 ? 'Красава' : 'Ах тиж паскуда!')
+})
+
 //
 //
 //
