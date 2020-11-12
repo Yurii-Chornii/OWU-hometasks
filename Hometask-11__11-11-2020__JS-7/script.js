@@ -114,11 +114,30 @@ document.querySelector('#fuckngTask button').addEventListener('click', () => {
     alert(findBadWord === -1 ? 'Красава' : 'Ах тиж паскуда!')
 })
 
+
 //
 //
 //
 // -- создать скрипт, который берет считывает на странице (rules.html) текст и делает сбоку меню-оглавление по всем заголовкам которые есть в тексте.
 //     При клике на пункт оглавления вы должны отправляться к этому пункту в тексте
+// function createNavForRulesHTML() {
+//     let rules = document.getElementsByTagName('h2');
+//     const ul = document.createElement('ul');
+//     for (let i = 0; i < rules.length; i++) {
+//         rules[i].setAttribute('id', `rule${i+1}`);
+//         console.log(rules[i]);
+//         const li = document.createElement('li');
+//         const a = document.createElement('a');
+//         a.setAttribute('href', `#rule${i+1}`);
+//         a.innerText = rules[i].innerText;
+//         ul.appendChild(li);
+//         li.appendChild(a);
+//     }
+//     document.body.appendChild(ul);
+// }
+// createNavForRulesHTML();
+
+
 //
 // -- взять массив пользователей
 // let usersWithAddress = [
