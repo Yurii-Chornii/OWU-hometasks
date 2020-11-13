@@ -4,6 +4,10 @@
     margin-bottom: 20px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+*::selection{
+    color: orange;
+    background: rgba(0, 0, 0, 0.08);
+}
 nav button {
     padding: 5px;
     font-size: 20px;

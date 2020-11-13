@@ -160,7 +160,7 @@ let usersWithAddress = [
 // Данные выводить в документ
 function checkboxFilters(){
     let arr = usersWithAddress;
-    // console.log(document.querySelector('#falseCheck').checked)
+    document.querySelector('#usersList').innerHTML = '';
     if(document.querySelector('#falseCheck').checked === true){
         arr = arr.filter(user => {
             if (!user.status) return user;
@@ -177,15 +177,18 @@ function checkboxFilters(){
         })
     }
     for (const user of arr) {
-        const user = document.createElement('div');
-        user.classList.add('border');
+        const userDiv = document.createElement('div');
+        userDiv.classList.add('border');
+        userDiv.style.backgroundColor = 'silver';
+        userDiv.innerHTML = `<h5>${user.id}, ${user.name}</h5><p>Age: ${user.age}, status: ${user.status}</p><p><b>Address:</b> ${user.address.number}, ${user.address.street} street, ${user.address.city}
+</p>`;
+        document.querySelector('#usersList').appendChild(userDiv);
     }
-    // document.querySelector('#usersWithSitysTask').appendChild()
 }
-
-// console.log(document.querySelector('#falseCheck'));
-// checkboxFilters();
-
+checkboxFilters();
+document.querySelector('#falseCheck').addEventListener('click', () => checkboxFilters());
+document.querySelector('#older29').addEventListener('click', () => checkboxFilters());
+document.querySelector('#kyiv').addEventListener('click', () => checkboxFilters());
 
 //
 //
@@ -196,4 +199,12 @@ function checkboxFilters(){
 //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
 //
 //
+
+
 // *** При виділені сегменту тексту на сторінці він стає жирний/курсивний/або якось іншим способом змінює свій стан
+// в css зробив це
+// *::selection{
+//     color: orange;
+//     background: rgba(0, 0, 0, 0.08);
+// }
+
