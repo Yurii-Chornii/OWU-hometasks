@@ -3,9 +3,7 @@
 //     Сделайте так, чтобы после захода на эту страницу через некоторое время, введенный текст остался в textarea.
 const task1Textarea = document.querySelector('#task1Textarea');
 task1Textarea.value = localStorage.getItem('task1TextareaValue');
-task1Textarea.oninput = function () {
-    localStorage.setItem('task1TextareaValue', this.value)
-}
+task1Textarea.oninput = function () {localStorage.setItem('task1TextareaValue', this.value)}
 
 
 //
@@ -17,15 +15,11 @@ const formTask2 = document.forms.task2Form;
 
 const task2userNameInput = formTask2.userName;
 task2userNameInput.value = localStorage.getItem('task2UserName');
-task2userNameInput.oninput = function (){
-    localStorage.setItem('task2UserName', this.value);
-}
+task2userNameInput.oninput = function (){localStorage.setItem('task2UserName', this.value)}
 
 const task2userSurnameInput = formTask2.userSurname;
 task2userSurnameInput.value = localStorage.getItem('task2UserSurname');
-task2userSurnameInput.oninput = function (){
-    localStorage.setItem('task2UserSurname', this.value);
-}
+task2userSurnameInput.oninput = function (){localStorage.setItem('task2UserSurname', this.value)}
 
 let task2UserSex = localStorage.getItem('task2UserSex');
 
@@ -43,12 +37,24 @@ formTask2.userSex[1].onclick = () => {
 
 const task2AdultUser = formTask2.adultUser;
 task2AdultUser.checked = localStorage.getItem('task2AdultUser') === 'true' ? true : false;
-task2AdultUser.onclick = function () {
-    localStorage.setItem('task2AdultUser', this.checked === true ? 'true' : 'false');
-}
+task2AdultUser.onclick = function () {localStorage.setItem('task2AdultUser', this.checked === true ? 'true' : 'false')}
 
 const task2UserCity = formTask2.userCity;
-console.log(task2UserCity.value);
+task2UserCity.value = localStorage.getItem('task2UserCity');
+task2UserCity.onchange = function (){localStorage.setItem('task2UserCity', this.value)}
+
+const task2UserComment = formTask2.userComment;
+task2UserComment.value = localStorage.getItem('task2UserComment');
+task2UserComment.oninput = function () {localStorage.setItem('task2UserComment', this.value)}
+
+formTask2.btnTask2.addEventListener('click', function (){
+    localStorage.removeItem('task2UserSex');
+    localStorage.removeItem('task2UserName');
+    localStorage.removeItem('task2UserSurname');
+    localStorage.removeItem('task2UserCity');
+    localStorage.removeItem('task2AdultUser');
+    localStorage.removeItem('task2UserComment');
+})
 
 
 //
