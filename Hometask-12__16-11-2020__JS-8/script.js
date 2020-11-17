@@ -130,8 +130,8 @@ class Contact {
 
     }
 }
-// const contacts = [new Contact('Yurii', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'), new Contact('Ivan', 'Ivanenko', '380937504015', 'ivan-ivanenko@gmail.com', 'epam', 'web development', '15.06.1997')];
-const contacts = localStorage.getItem('contacts')||[]
+const contacts = JSON.parse(localStorage.getItem('contactsMemory'))||[]
+
 // console.log(contacts);
 
 function postContacts(contacts){
@@ -151,6 +151,7 @@ function getContacts(){
 
 function showContacts(contacts){
     document.querySelector('#contactsWrapper').innerHTML = '';
+    //замінити цикл на форіч і взяти ше ітератор з нього, і тут вже давати кнопку видалити і редагувати і доступатись по індексу завдяки ітератору
     for (const contact of contacts) {
         const contactBox = document.createElement('div');
         contactBox.innerHTML = `
@@ -181,14 +182,14 @@ function addNewContact(contact) {
     postContacts(contacts);
     showContacts(getContacts());
 }
-addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
-
-addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+// addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+//
+// addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
 // addNewContact();
 // let newContact = new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value);
 // addNewContact(newContact);
 
 
 document.getElementById('createContactBtn').onclick = () => {
-    addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+    addNewContact(new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value));
 }
