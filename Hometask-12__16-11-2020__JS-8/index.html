@@ -6,6 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HW 8 js Yurii Chornii</title>
+    <style>
+        #historyButtons{
+            display: none;
+        }
+        #contactsWrapper{
+            width: 60%;
+            margin: auto;
+            background-color: #e3e3e3;
+            font-family: "Segoe UI",sans-serif;
+        }
+    </style>
 </head>
 <body>
 <div>
@@ -50,6 +61,43 @@
     <hr>
 </div>
 
+<div>
+    <h4>task 3</h4>
+    <div id="historyButtons">
+        <button id="back"><</button>
+        history
+        <button id="next">></button>
+    </div>
+    <br>
+    <textarea name="task3TextArea" id="task3TextArea" cols="60" rows="15"></textarea>
+    <br>
+    <button id="save">сохранить</button>
+    <br>
+    <br>
+    <hr>
+</div>
+<div style="margin-bottom: 150px;">
+    <h4>Task 4</h4>
+    <div>
+        <h4>Add new contact</h4>
+        <form name="addNewContactForm">
+            <input type="text" name="contactName" placeholder="Ім'я">
+            <input type="text" name="contactSurname" placeholder="Прізвище">
+            <input type="text" name="contactPhoneNumber" placeholder="380937210267">
+            <input type="email" name="contactMail" placeholder="your-email@gmail.com">
+            <br>
+            <br>
+            <input type="text" name="contactCompany" placeholder="Компанія">
+            <input type="text" name="contactDepartment" placeholder="Відділ">
+            <input type="text" name="contactBirthday" placeholder="Днюха (01.01.2000)">
+            <button name="createContactBtn">Створити контакт</button>
+        </form>
+    </div>
+    <div id="contactsWrapper">
+        <h4 align="center">Contacts list:</h4>
+    </div>
+    <hr>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
