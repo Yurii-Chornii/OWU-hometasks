@@ -111,8 +111,6 @@ document.querySelector('#next').addEventListener('click', () => {
 // --Каждому контакту добавить кнопку для удаления контакта.
 // --Каждому контакту добавить кнопку редактироваиня. При нажати на нее появляется форма, в которой есть все необходимые инпуты для редактирования, которые уже заполнены данными объекта
 //
-const contacts = [];
-
 class Contact {
     constructor(name, surname, phoneNumber, email, company, department, birthday) {
         this.name = name;
@@ -132,15 +130,24 @@ class Contact {
 
     }
 }
+// const contacts = [new Contact('Yurii', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'), new Contact('Ivan', 'Ivanenko', '380937504015', 'ivan-ivanenko@gmail.com', 'epam', 'web development', '15.06.1997')];
+const contacts = localStorage.getItem('contacts')||[]
+// console.log(contacts);
 
-const yuraChorniy = new Contact('Yurii', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998');
-const ivan = new Contact('Ivan', 'Ivanenko', '380937504015', 'ivan-ivanenko@gmail.com', 'epam', 'web development', '15.06.1997');
-
-function addNewContact(contact) {
-    contacts.push(contact)
+function postContacts(contacts){
+    localStorage.setItem('contactsMemory', JSON.stringify(contacts));
 }
-addNewContact(yuraChorniy);
-addNewContact(ivan);
+postContacts(contacts);
+
+function getContacts(){
+    return JSON.parse(localStorage.getItem('contactsMemory'));
+}
+
+// console.log(getContacts());
+
+
+
+
 
 function showContacts(contacts){
     document.querySelector('#contactsWrapper').innerHTML = '';
@@ -157,19 +164,31 @@ function showContacts(contacts){
         document.querySelector('#contactsWrapper').appendChild(contactBox);
     }
 }
-showContacts(contacts);
+showContacts(getContacts());
 
 
 
 // додавання нового контакту
-document.forms.addNewContactForm.createContactBtn.addEventListener('click', (ev) => {
-    ev.preventDefault();
-    const newContact = new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value);
-    addNewContact(newContact);
-    showContacts(contacts);
-})
+// document.forms.addNewContactForm.createContactBtn.addEventListener('click', (ev) => {
+//     ev.preventDefault();
+//
+// })
 
-function postContacts(contacts){
-    localStorage.setItem('contacts', contacts)
+function addNewContact(contact) {
+    const contacts = getContacts();
+    contacts.push(contact);
+    console.log(contacts);
+    postContacts(contacts);
+    showContacts(getContacts());
 }
-postContacts(JSON.stringify(contacts));
+addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+
+addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+// addNewContact();
+// let newContact = new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value);
+// addNewContact(newContact);
+
+
+document.getElementById('createContactBtn').onclick = () => {
+    addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
+}
