@@ -8,7 +8,47 @@
     <title>HW 8 js Yurii Chornii</title>
 </head>
 <body>
-
+<div>
+    <h4>Task 1</h4>
+    <textarea name="task1Textarea" id="task1Textarea" cols="30" rows="10"></textarea>
+    <hr>
+</div>
+<div>
+    <h4>Task 2</h4>
+    <form name="task2Form">
+        <label for="task2userNameInput">Ім'я</label>
+        <input type="text" name="userName" id="task2userNameInput">
+        <label for="task2userSurnameInput">Прізвище</label>
+        <input type="text" name="userSurname" id="task2userSurnameInput">
+        <br>
+        <br>
+        <label>Стать
+            <input type="radio" name="userSex" id="task2userSexInputMale" value="male">Чоловіча
+            <input type="radio" name="userSex" id="task2userSexInputFemale" value="female">Жіноча
+        </label>
+        <br>
+        <br>
+        <input type="checkbox" name="adultUser" id="task2adultUser">
+        <label for="task2adultUser"></label>Мені є 18
+        <br>
+        <br>
+        <label>Місто
+            <select name="userCity" id="task2City">
+                <option value="lviv">Львів</option>
+                <option value="kyiv">Київ</option>
+                <option value="frankivsk">Франківськ</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <label for="task2UserComment">Ваш коментар:</label>
+        <textarea name="userComment" id="task2UserComment" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <button type="submit">Підтвердити</button>
+    </form>
+    <hr>
+</div>
 
 <script src="script.js"></script>
 </body>
