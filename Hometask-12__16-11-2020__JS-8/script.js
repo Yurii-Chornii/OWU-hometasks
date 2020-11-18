@@ -121,18 +121,9 @@ class Contact {
         this.department = department;
         this.birthday = birthday;
     }
-
-    delete() {
-
-    }
-
-    edit() {
-
-    }
 }
 const contacts = JSON.parse(localStorage.getItem('contactsMemory'))||[]
 
-// console.log(contacts);
 
 function postContacts(contacts){
     localStorage.setItem('contactsMemory', JSON.stringify(contacts));
@@ -143,37 +134,34 @@ function getContacts(){
     return JSON.parse(localStorage.getItem('contactsMemory'));
 }
 
-// console.log(getContacts());
 
 
-
-
+function deleteContact(index){
+    let contacts = getContacts();
+    contacts.splice(index, 1);
+    postContacts(contacts);
+    showContacts(getContacts());
+}
 
 function showContacts(contacts){
     document.querySelector('#contactsWrapper').innerHTML = '';
-    //замінити цикл на форіч і взяти ше ітератор з нього, і тут вже давати кнопку видалити і редагувати і доступатись по індексу завдяки ітератору
-    for (const contact of contacts) {
+    contacts.forEach(function (contact, index){
+        contact.id = index;
+
         const contactBox = document.createElement('div');
         contactBox.innerHTML = `
             <div>
                 <h5>${contact.name}, ${contact.surname}</h5>
                 <p>${contact.phoneNumber}, ${contact.email}</p>
                 <p>Company: ${contact.company}, department: ${contact.department}, birthday: ${contact.birthday}</p>
-                <hr>
             </div>
+            <button onclick="deleteContact(${index})">Видалити</button>
+            <hr>
             `;
         document.querySelector('#contactsWrapper').appendChild(contactBox);
-    }
+    })
 }
 showContacts(getContacts());
-
-
-
-// додавання нового контакту
-// document.forms.addNewContactForm.createContactBtn.addEventListener('click', (ev) => {
-//     ev.preventDefault();
-//
-// })
 
 function addNewContact(contact) {
     const contacts = getContacts();
@@ -182,13 +170,6 @@ function addNewContact(contact) {
     postContacts(contacts);
     showContacts(getContacts());
 }
-// addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
-//
-// addNewContact(new Contact('Dima', 'Chornii', '380937403014', 'yurachorniylviv@gmail.com', 'Lira-Lux', 'sales', '24.04.1998'));
-// addNewContact();
-// let newContact = new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value);
-// addNewContact(newContact);
-
 
 document.getElementById('createContactBtn').onclick = () => {
     addNewContact(new Contact(document.forms.addNewContactForm.contactName.value, document.forms.addNewContactForm.contactSurname.value, document.forms.addNewContactForm.contactPhoneNumber.value, document.forms.addNewContactForm.contactMail.value, document.forms.addNewContactForm.contactCompany.value, document.forms.addNewContactForm.contactDepartment.value, document.forms.addNewContactForm.contactBirthday.value));
