@@ -122,30 +122,62 @@ class Contact {
         this.birthday = birthday;
     }
 }
-const contacts = JSON.parse(localStorage.getItem('contactsMemory'))||[]
+
+const contacts = JSON.parse(localStorage.getItem('contactsMemory')) || []
 
 
-function postContacts(contacts){
+function postContacts(contacts) {
     localStorage.setItem('contactsMemory', JSON.stringify(contacts));
 }
+
 postContacts(contacts);
 
-function getContacts(){
+function getContacts() {
     return JSON.parse(localStorage.getItem('contactsMemory'));
 }
 
 
-
-function deleteContact(index){
+function deleteContact(index) {
     let contacts = getContacts();
     contacts.splice(index, 1);
     postContacts(contacts);
     showContacts(getContacts());
 }
 
-function showContacts(contacts){
+function editContact(index) {
+    const createContactBtn = document.querySelector('#createContactBtn');
+    const editContactBtn = document.querySelector('#editContactBtn');
+    createContactBtn.style.display = 'none';
+    editContactBtn.style.display = 'block';
+    let contacts = getContacts();
+    let thisContact = contacts[index];
+    const form = document.forms.addNewContactForm;
+    form.contactName.value = thisContact.name;
+    form.contactSurname.value = thisContact.surname;
+    form.contactPhoneNumber.value = thisContact.phoneNumber;
+    form.contactMail.value = thisContact.email;
+    form.contactCompany.value = thisContact.company;
+    form.contactDepartment.value = thisContact.department;
+    form.contactBirthday.value = thisContact.birthday;
+    editContactBtn.addEventListener('click', () => {
+        thisContact.name = form.contactName.value;
+        thisContact.surname = form.contactSurname.value;
+        thisContact.phoneNumber = form.contactPhoneNumber.value;
+        thisContact.email = form.contactMail.value;
+        thisContact.company = form.contactCompany.value;
+        thisContact.department = form.contactDepartment.value;
+        thisContact.birthday = form.contactBirthday.value;
+        contacts.splice(index, 1, thisContact);
+        postContacts(contacts);
+        showContacts(getContacts());
+        createContactBtn.style.display = 'block';
+        editContactBtn.style.display = 'none';
+    })
+}
+
+function showContacts(contacts) {
     document.querySelector('#contactsWrapper').innerHTML = '';
-    contacts.forEach(function (contact, index){
+    contacts.forEach(function (contact, index) {
         contact.id = index;
 
         const contactBox = document.createElement('div');
@@ -156,17 +188,18 @@ function showContacts(contacts){
                 <p>Company: ${contact.company}, department: ${contact.department}, birthday: ${contact.birthday}</p>
             </div>
             <button onclick="deleteContact(${index})">Видалити</button>
+            <button onclick="editContact(${index})">Редагувати</button>
             <hr>
             `;
         document.querySelector('#contactsWrapper').appendChild(contactBox);
     })
 }
+
 showContacts(getContacts());
 
 function addNewContact(contact) {
     const contacts = getContacts();
     contacts.push(contact);
-    console.log(contacts);
     postContacts(contacts);
     showContacts(getContacts());
 }
