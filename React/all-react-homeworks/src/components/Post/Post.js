@@ -6,7 +6,7 @@ class Post extends Component {
         return (
             <div>
                 {item.id} - {item.title}
-                <button onClick={() => choseThisPost(item.id)}>Chose me</button>
+                <button onClick={() => choseThisPost(item.id)}>Choose me</button>
                 <br/>
                 {showBody && item.body}
             </div>

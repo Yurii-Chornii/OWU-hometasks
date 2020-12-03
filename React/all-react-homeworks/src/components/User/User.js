@@ -6,7 +6,7 @@ class User extends Component {
         return (
             <div>
                 {item.id} - {item.name}
-                <button onClick={() => selectThisUser(item.id)}>Chose me</button>
+                <button onClick={() => selectThisUser(item.id)}>Choose me</button>
             </div>
         );
     }
