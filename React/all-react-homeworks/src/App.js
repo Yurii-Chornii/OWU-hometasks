@@ -8,10 +8,13 @@ class App extends Component {
     render() {
         return (
             <div>
+                <h2>Users</h2>
                 <AllUsers/>
                 <hr/>
+                <h2>Posts</h2>
                 <AllPosts/>
                 <hr/>
+                <h2>Comments</h2>
                 <AllComments/>
                 <br/><br/>
             </div>
