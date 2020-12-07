@@ -22,7 +22,6 @@ class MarriedCouples extends Component {
     render() {
         let {mans, womans} = this.props;
         let couples = this.findCouple(mans, womans, 1);
-        // console.log(couples);
         return (
             <div>
                 {couples.map(value => <MarriedCouple couple={value} key={value.id}/>)}

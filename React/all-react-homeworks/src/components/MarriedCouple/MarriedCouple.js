@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 class MarriedCouple extends Component {
     render() {
         let {couple} = this.props;
-        console.log(couple)
         return (
             <div>
                 {couple.man.name} - {couple.man.age} y.o. + {couple.woman.name} - {couple.woman.age} y.o.
