@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/all-comments/All-comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/all-posts/All-posts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/all-users/All-users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/comment/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/post/Post.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/all-comments/All-comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/all-comments/All-comments.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/comment/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/comment/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CommentsService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CommentsService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606985819147</updated>
       <workItem from="1606985823179" duration="347000" />
-      <workItem from="1607355889321" duration="1356000" />
+      <workItem from="1607355889321" duration="4155000" />
     </task>
     <task id="LOCAL-00001" summary="empty project">
       <created>1606985957898</created>
@@ -90,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1607003400832</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="second commit&#10;work in All-comments.js">
+      <created>1607357340765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607357340765</updated>
+    </task>
+    <task id="LOCAL-00006" summary="second commit&#10;work in All-comments.js">
+      <created>1607357444033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607357444033</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -13,6 +13,7 @@ class App extends Component {
                 <AllPosts/>
                 <hr/>
                 <AllComments/>
+                <br/><br/>
             </div>
         );
     }

@@ -2,13 +2,11 @@ import React, {Component} from 'react';
 
 class Comment extends Component {
     render() {
-        let {item} = this.props;
-        // console.log(item)
+        let {item, chosenOne, showBtn} = this.props;
         return (
             <div>
                 {item.id} - {item.name}
-                <button>Choose me</button>
-
+                {showBtn && <button onClick={() => chosenOne(item.id)}>Choose me</button>}
             </div>
         );
     }

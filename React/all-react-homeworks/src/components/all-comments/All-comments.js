@@ -1,24 +1,25 @@
 import React, {Component} from 'react';
-import {CommentsService} from "../../services/CommentsService";
 import Comment from "../comment/Comment";
+import {CommentsService} from "../../services/CommentsService";
 
 class AllComments extends Component {
+    commentService = new CommentsService();
+
     state = {comments: [], chosenComment: null}
 
-    commentServise = new CommentsService();
+    chosenOne = (id) => {
+        this.commentService.getCommentById(id).then(value => this.setState({chosenComment: value}))
+    }
 
     componentDidMount() {
-        this.commentServise.getAllComments().then(value => this.setState({comments : value}))
-    }
-    chosenOne(id){
-        this.commentServise.getCommentById(id).then(value => this.setState({chosenComment : value}))
+        this.commentService.getAllComments().then(value => this.setState({comments: value}))
     }
 
     render() {
         let {comments, chosenComment} = this.state;
         return (
             <div>
-                {comments.map(value => <Comment item={value} key={value.id} />)}
+                {comments.map(value => <Comment item={value} key={value.id} chosenOne={this.chosenOne} showBtn={true}/>)}
                 <hr/>
                 {chosenComment && <Comment item={chosenComment}/>}
             </div>
