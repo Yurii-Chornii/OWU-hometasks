@@ -2,31 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/setupTests.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/All-comments/AllComments.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/All-posts/AllPosts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/All-users/AllUsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Comment/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Post/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/User/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/services/CommentService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/services/PostService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/services/UserService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="clear_application" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1l8jsGLedGXyjn4u0r8bO7e1zya" />
@@ -39,10 +48,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -53,11 +67,81 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606985819147</updated>
-      <workItem from="1606985823179" duration="100000" />
+      <workItem from="1606985823179" duration="347000" />
+      <workItem from="1607355889321" duration="6207000" />
+      <workItem from="1607420181347" duration="7054000" />
+      <workItem from="1607431938526" duration="7372000" />
     </task>
+    <task id="LOCAL-00001" summary="empty project">
+      <created>1606985957898</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606985957898</updated>
+    </task>
+    <task id="LOCAL-00002" summary="empty project">
+      <created>1606986050900</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606986050900</updated>
+    </task>
+    <task id="LOCAL-00003" summary="made users (the same like on lesson)">
+      <created>1606998012018</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606998012018</updated>
+    </task>
+    <task id="LOCAL-00004" summary="made posts">
+      <created>1607003400832</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607003400832</updated>
+    </task>
+    <task id="LOCAL-00005" summary="second commit&#10;work in All-comments.js">
+      <created>1607357340765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607357340765</updated>
+    </task>
+    <task id="LOCAL-00006" summary="second commit&#10;work in All-comments.js">
+      <created>1607357444033</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607357444033</updated>
+    </task>
+    <task id="LOCAL-00007" summary="work in All-comments.js finished">
+      <created>1607360068712</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607360068712</updated>
+    </task>
+    <task id="LOCAL-00008" summary="done">
+      <created>1607361981544</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1607361981544</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="empty project" />
+    <MESSAGE value="made users (the same like on lesson)" />
+    <MESSAGE value="made posts" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="second commit&#10;work in All-comments.js" />
+    <MESSAGE value="work in All-comments.js finished" />
+    <MESSAGE value="done" />
+    <option name="LAST_COMMIT_MESSAGE" value="done" />
   </component>
 </project>
