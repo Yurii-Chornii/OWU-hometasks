@@ -5,7 +5,7 @@ import FullUser from "../full-user/FullUser";
 import {Route, Switch, withRouter} from "react-router-dom";
 
 class AllUsers extends Component {
-    state = {users: [], chosenUser: null}
+    state = {users: []}
     userService = new UserService();
 
     async componentDidMount() {
