@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 import {CommentService} from "../services/CommentService";
 import Comment from "../Comment/Comment";
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, withRouter} from "react-router-dom";
+import FullComment from "../full-comment/FullComment";
 
 
 class AllComments extends Component {
-    state = {comments : []}
+    state = {comments: []}
     commentService = new CommentService();
 
     async componentDidMount() {
@@ -21,9 +22,9 @@ class AllComments extends Component {
                 <br/>
                 <div>
                     <Switch>
-                        <Route path={'/comments/:id'} render={() => {
-
-                            return 'comments'
+                        <Route path={'/comments/:id'} render={(props) => {
+                            const {match: {params: {id}}} = props;
+                            return <FullComment {...props} key={id}/>
                         }}/>
                     </Switch>
                 </div>
@@ -32,4 +33,4 @@ class AllComments extends Component {
     }
 }
 
-export default AllComments;
+export default withRouter(AllComments);

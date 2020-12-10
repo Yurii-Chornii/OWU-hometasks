@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {UserService} from "../services/UserService";
 import User from "../User/User";
-import {Route, Switch} from "react-router-dom";
-
+import FullUser from "../full-user/FullUser";
+import {Route, Switch, withRouter} from "react-router-dom";
 
 class AllUsers extends Component {
-    state = {users: []}
+    state = {users: [], chosenUser: null}
     userService = new UserService();
 
     async componentDidMount() {
@@ -17,12 +17,13 @@ class AllUsers extends Component {
         let {users} = this.state;
         return (
             <div>
-                {users.map(value => <User key={value.id} item={value}/>)}
+                {users.map(value => <User key={value.id} item={value} showBtn={true}/>)}
                 <br/>
                 <div>
                     <Switch>
                         <Route path={'/users/:id'} render={(props) => {
-                            return 'bla bla'
+                            let {match: {params: {id}}} = props;
+                            return <FullUser {...props} key={id}/>
                         }}/>
                     </Switch>
                 </div>
@@ -31,4 +32,4 @@ class AllUsers extends Component {
     }
 }
 
-export default AllUsers;
+export default withRouter(AllUsers);
