@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="done">
-      <change afterPath="$PROJECT_DIR$/src/components/all-people/AllPeople.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/full-man/FullMan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/man/Man.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/services/PeopleService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/All-users/AllUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/All-users/AllUsers.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +58,7 @@
       <workItem from="1607355889321" duration="6207000" />
       <workItem from="1607420181347" duration="7054000" />
       <workItem from="1607431938526" duration="7644000" />
-      <workItem from="1607449579309" duration="17309000" />
+      <workItem from="1607449579309" duration="19117000" />
     </task>
     <task id="LOCAL-00001" summary="empty project">
       <created>1606985957898</created>
@@ -137,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607600818116</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="done">
+      <created>1607613806726</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1607613806726</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
