@@ -1,0 +1,16 @@
+.wrapper {
+    background-color: #132d4c;
+    color: silver;
+}
+.linksWrapper{
+    display: flex;
+}
+.main{
+    height: calc(100vh - 56px);
+    padding: 20px;
+}
+.componentMainTitle{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
