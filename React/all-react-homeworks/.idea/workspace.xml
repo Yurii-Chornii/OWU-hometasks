@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/setupTests.js" beforeDir="false" />
+    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="homework done">
+      <change afterPath="$PROJECT_DIR$/src/components/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CommentsSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostsSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UserSearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/SearchService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="clear_application" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1l8jsGLedGXyjn4u0r8bO7e1zya" />
@@ -55,9 +62,22 @@
       <updated>1606985819147</updated>
       <workItem from="1606985823179" duration="100000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1608040619603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608040619604</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <MESSAGE value="homework done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework done" />
   </component>
 </project>
