@@ -11,7 +11,6 @@ class App extends Component {
     componentDidMount() {
         this.userService.getUsers().then(value => this.setState({users: value}))
     }
-
     render() {
         let {users} = this.state;
         return (
