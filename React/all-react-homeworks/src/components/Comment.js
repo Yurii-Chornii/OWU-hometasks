@@ -4,7 +4,6 @@ class Comment extends Component {
     render() {
         let {number, elements} = this.props;
         let element = elements.find(value => value.id === +number)
-        console.log(element)
         return (
             <div>
                 {
