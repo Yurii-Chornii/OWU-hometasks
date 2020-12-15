@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +12,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="clear_application" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1l8jsGLedGXyjn4u0r8bO7e1zya" />
