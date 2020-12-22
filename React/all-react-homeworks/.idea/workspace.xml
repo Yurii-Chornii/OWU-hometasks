@@ -2,31 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="clear_application" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1l8jsGLedGXyjn4u0r8bO7e1zya" />
@@ -43,6 +40,7 @@
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -54,10 +52,38 @@
       <option name="presentableId" value="Default" />
       <updated>1606985819147</updated>
       <workItem from="1606985823179" duration="100000" />
+      <workItem from="1608666102656" duration="2821000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1608040619603</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608040619604</updated>
+    </task>
+    <task id="LOCAL-00002" summary="homework done">
+      <created>1608047529727</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608047529727</updated>
+    </task>
+    <task id="LOCAL-00003" summary="homework done">
+      <created>1608047567151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608047567151</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <MESSAGE value="homework done" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework done" />
   </component>
 </project>
