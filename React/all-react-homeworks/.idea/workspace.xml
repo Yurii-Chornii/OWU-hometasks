@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
+    <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="counter">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
@@ -52,7 +52,8 @@
       <option name="presentableId" value="Default" />
       <updated>1606985819147</updated>
       <workItem from="1606985823179" duration="100000" />
-      <workItem from="1608666102656" duration="2821000" />
+      <workItem from="1608666102656" duration="7118000" />
+      <workItem from="1608887523170" duration="450000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1608040619603</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608047567151</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="counter">
+      <created>1608669847930</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608669847930</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="done" />
     <MESSAGE value="homework done" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework done" />
+    <MESSAGE value="counter" />
+    <option name="LAST_COMMIT_MESSAGE" value="counter" />
   </component>
 </project>
