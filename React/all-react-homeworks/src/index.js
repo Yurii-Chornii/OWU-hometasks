@@ -7,8 +7,8 @@ import {createStore} from "redux";
 import {Provider} from "react-redux";
 
 const initialState = {
-    counter: 0,
-    user : {name: 'Yura', age: 22}
+    counter: 1,
+    user : null
 }
 
 const reducer = (state = initialState, action) => {
@@ -22,6 +22,9 @@ const reducer = (state = initialState, action) => {
         case 'RESET' : {
             return {...state, counter: 0}
         }
+        case 'SET_USER' : {
+            return {...state, user: action.payload}
+        }
         default: {
             return state;
         }
@@ -29,7 +32,6 @@ const reducer = (state = initialState, action) => {
 }
 
 const store = createStore(reducer);
-
 
 ReactDOM.render(
     <React.StrictMode>
