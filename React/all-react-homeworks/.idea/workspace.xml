@@ -2,31 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5456919c-d62b-4610-8fb7-d417e834e419" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../React_hometask_2___02_12_2020/react-homework-2/src/setupTests.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="redux_practice" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectId" id="1l8jsGLedGXyjn4u0r8bO7e1zya" />
@@ -39,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.last.introduce.type" value="CONST" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,10 +60,57 @@
       <option name="presentableId" value="Default" />
       <updated>1606985819147</updated>
       <workItem from="1606985823179" duration="100000" />
+      <workItem from="1609257964860" duration="4378000" />
+      <workItem from="1609323973315" duration="72000" />
+      <workItem from="1609350143470" duration="6783000" />
     </task>
+    <task id="LOCAL-00001" summary="first commit cleanup function (useEffect)">
+      <created>1608889102913</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608889102913</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second commit useMemo">
+      <created>1608891970832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608891970832</updated>
+    </task>
+    <task id="LOCAL-00003" summary="third commit redux (start)">
+      <created>1608895936765</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608895936765</updated>
+    </task>
+    <task id="LOCAL-00004" summary="third commit redux">
+      <created>1608906924242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608906924242</updated>
+    </task>
+    <task id="LOCAL-00005" summary="redux, homework has done">
+      <created>1608908401552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608908401552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit cleanup function (useEffect)" />
+    <MESSAGE value="second commit useMemo" />
+    <MESSAGE value="third commit redux (start)" />
+    <MESSAGE value="third commit redux" />
+    <MESSAGE value="redux, homework has done" />
+    <option name="LAST_COMMIT_MESSAGE" value="redux, homework has done" />
   </component>
 </project>

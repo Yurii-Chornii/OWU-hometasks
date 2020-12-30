@@ -1,0 +1,20 @@
+.inputs-wrapper{
+    width: 50%;
+    margin: auto;
+}
+.modal-background{
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px) brightness(50%);
+}
+
+.myModal{
+    width: 50%;
+}
