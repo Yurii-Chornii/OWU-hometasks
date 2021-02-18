@@ -62,6 +62,8 @@ const x = require('./dir/file');
 
 //=======homework 1 task=======
 
+// p.s я всі файлики поперемішував назад вручну, щоб ти міг перевірити чи працює все ;)
+
 const fs = require('fs');
 
 // const boysFolder = __dirname + '/2000';
