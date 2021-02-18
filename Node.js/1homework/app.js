@@ -57,44 +57,52 @@ const x = require('./dir/file');
 //     if (err) console.log(err)
 // })
 
+
+
+
+//=======homework 1 task=======
+
 const fs = require('fs');
 
-const boysFolder = __dirname + '/2000';
-const girlsFolder = __dirname + '/1800';
+// const boysFolder = __dirname + '/2000';
+// const girlsFolder = __dirname + '/1800';
+//
+// fs.readdir(boysFolder, (err, files) => {
+//     if (err){
+//         console.log(err);
+//         return;
+//     }
+//     files.forEach(fileName => {
+//         fs.readFile(`${boysFolder}/${fileName}`, ((err1, data) => {
+//             if (err1) console.log(err1);
+//             const user = JSON.parse(data.toString());
+//             if(user.gender === 'female'){
+//                 fs.rename(`${boysFolder}/${fileName}`, `${girlsFolder}/${fileName}`, err2 => {
+//                     if (err2) console.log(err2)
+//                 })
+//             }
+//         }))
+//     })
+// })
+//
+// fs.readdir(girlsFolder, (err, files) => {
+//     if (err){
+//         console.log(err);
+//         return;
+//     }
+//     files.forEach(fileName => {
+//         fs.readFile(`${girlsFolder}/${fileName}`, ((err1, data) => {
+//             if (err1) console.log(err1);
+//             const user = JSON.parse(data.toString());
+//             if(user.gender === 'male'){
+//                 fs.rename(`${girlsFolder}/${fileName}`, `${boysFolder}/${fileName}`, err2 => {
+//                     if (err2) console.log(err2)
+//                 })
+//             }
+//         }))
+//     })
+// })
 
-fs.readdir(boysFolder, (err, files) => {
-    if (err){
-        console.log(err);
-        return;
-    }
-    files.forEach(fileName => {
-        fs.readFile(`${boysFolder}/${fileName}`, ((err1, data) => {
-            if (err1) console.log(err1);
-            const user = JSON.parse(data.toString());
-            if(user.gender === 'female'){
-                fs.rename(`${boysFolder}/${fileName}`, `${girlsFolder}/${fileName}`, err2 => {
-                    if (err2) console.log(err2)
-                })
-            }
-        }))
-    })
-})
+//=======homework 1 task=======
 
-fs.readdir(girlsFolder, (err, files) => {
-    if (err){
-        console.log(err);
-        return;
-    }
-    files.forEach(fileName => {
-        fs.readFile(`${girlsFolder}/${fileName}`, ((err1, data) => {
-            if (err1) console.log(err1);
-            const user = JSON.parse(data.toString());
-            if(user.gender === 'male'){
-                fs.rename(`${girlsFolder}/${fileName}`, `${boysFolder}/${fileName}`, err2 => {
-                    if (err2) console.log(err2)
-                })
-            }
-        }))
-    })
-})
 
