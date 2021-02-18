@@ -103,6 +103,33 @@ const fs = require('fs');
 //     })
 // })
 
-//=======homework 1 task=======
+//=======homework 2 task=======
+// роблю порядок в папці dir, в ній є багато інших папок з файликами, виношу всі файлики в папку dir безпосередньо
+const path = require('path');
+const homeFolder =  path.join(`${__dirname}`, 'dir');
 
-
+function flatFiles(flattingFolder, mainFolder = homeFolder){
+    fs.readdir(flattingFolder, ((err, files) => {
+        if (err){
+            console.log(err);
+            return;
+        }
+        files.forEach(fileName => {
+            const filePath = path.join(flattingFolder, fileName)
+            fs.stat(filePath, (statErr, stats) => {
+                if(stats.isDirectory()){
+                    flattingFolder = path.join(flattingFolder, fileName);
+                    flatFiles(flattingFolder);
+                }else{
+                    if(flattingFolder !== mainFolder){
+                        const to = path.join(mainFolder, fileName)
+                        fs.rename(filePath, to, err1 => {
+                            if (err1) console.log(err1)
+                        })
+                    }
+                }
+            })
+        })
+    }))
+}
+flatFiles(homeFolder);
