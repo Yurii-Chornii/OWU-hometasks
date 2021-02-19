@@ -1,4 +1,5 @@
 const x = require('./dir/file');
+const fs = require('fs');
 
 // x.createUser('Yura', 22)
 // console.log(__dirname)
@@ -56,6 +57,19 @@ const x = require('./dir/file');
 // fs.rename(`${__dirname}/netflix`, `${__dirname}/dir/netflix`, err => {
 //     if (err) console.log(err)
 // })
+// const path = require('path');
+// const filePath = path.join(__dirname, 'dir', 'king.txt')
+//
+// const readStream = fs.createReadStream(filePath);
+//
+// readStream.on('data', chunk => {
+//     console.log(chunk.toString())
+// })
+// readStream.on('end', chunk => {
+//     console.log('реклама наприклад')
+// })
+
+
 
 
 
@@ -64,7 +78,6 @@ const x = require('./dir/file');
 
 // p.s я всі файлики поперемішував назад вручну, щоб ти міг перевірити чи працює все ;)
 
-const fs = require('fs');
 
 // const boysFolder = __dirname + '/2000';
 // const girlsFolder = __dirname + '/1800';
@@ -106,32 +119,33 @@ const fs = require('fs');
 // })
 
 //=======homework 2 task=======
-// роблю порядок в папці dir, в ній є багато інших папок з файликами, виношу всі файлики в папку dir безпосередньо
-const path = require('path');
-const homeFolder =  path.join(`${__dirname}`, 'dir');
+// цією роблю порядок в папці dir, в ній є багато інших папок з файликами, виношу всі файлики в папку dir безпосередньо
 
-function flatFiles(flattingFolder, mainFolder = homeFolder){
-    fs.readdir(flattingFolder, ((err, files) => {
-        if (err){
-            console.log(err);
-            return;
-        }
-        files.forEach(fileName => {
-            const filePath = path.join(flattingFolder, fileName)
-            fs.stat(filePath, (statErr, stats) => {
-                if(stats.isDirectory()){
-                    flattingFolder = path.join(flattingFolder, fileName);
-                    flatFiles(flattingFolder);
-                }else{
-                    if(flattingFolder !== mainFolder){
-                        const to = path.join(mainFolder, fileName)
-                        fs.rename(filePath, to, err1 => {
-                            if (err1) console.log(err1)
-                        })
-                    }
-                }
-            })
-        })
-    }))
-}
-flatFiles(homeFolder);
+// const path = require('path');
+// const homeFolder =  path.join(`${__dirname}`, 'dir');
+//
+// function flatFiles(flattingFolder, mainFolder = homeFolder){
+//     fs.readdir(flattingFolder, ((err, files) => {
+//         if (err){
+//             console.log(err);
+//             return;
+//         }
+//         files.forEach(fileName => {
+//             const filePath = path.join(flattingFolder, fileName)
+//             fs.stat(filePath, (statErr, stats) => {
+//                 if(stats.isDirectory()){
+//                     flattingFolder = path.join(flattingFolder, fileName);
+//                     flatFiles(flattingFolder);
+//                 }else{
+//                     if(flattingFolder !== mainFolder){
+//                         const to = path.join(mainFolder, fileName)
+//                         fs.rename(filePath, to, err1 => {
+//                             if (err1) console.log(err1)
+//                         })
+//                     }
+//                 }
+//             })
+//         })
+//     }))
+// }
+// flatFiles(homeFolder);
