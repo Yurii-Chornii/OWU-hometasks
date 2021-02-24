@@ -1,0 +1,10 @@
+{
+  "name": "2homework",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express-handlebars": "^5.2.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
