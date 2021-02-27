@@ -1,4 +1,4 @@
-import java.util.Arrays;
+package lesson1;
 
 public class Start {
 
@@ -14,9 +14,9 @@ public class Start {
 //        System.out.println(user1);
 //        System.out.println(user1.getId());
 //
-//        Wallet wallet = new Wallet("leather", 10000);
+//        lesson1.Wallet wallet = new lesson1.Wallet("leather", 10000);
 //
-//        User userWithWallet = new User(3, "kokos", skills, wallet);
+//        lesson1.User userWithWallet = new lesson1.User(3, "kokos", skills, wallet);
 //        System.out.println(userWithWallet);
 
         //homework

@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Phone {
     private String model;
     private String color;
@@ -48,7 +50,7 @@ public class Phone {
 
     @Override
     public String toString() {
-        return "Phone{" +
+        return "lesson1.Phone{" +
                 "model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", ram=" + ram +

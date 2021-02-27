@@ -1,3 +1,5 @@
+package lesson1;
+
 import java.util.Arrays;
 
 public class Car {
@@ -51,7 +53,7 @@ public class Car {
 
     @Override
     public String toString() {
-        return "Car{" +
+        return "lesson1.Car{" +
                 "model='" + model + '\'' +
                 ", producer='" + producer + '\'' +
                 ", power=" + power +

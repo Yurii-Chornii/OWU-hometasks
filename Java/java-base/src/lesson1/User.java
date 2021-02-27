@@ -1,3 +1,5 @@
+package lesson1;
+
 import java.util.Arrays;
 
 public class User {
@@ -63,7 +65,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "lesson1.User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", skills=" + Arrays.toString(skills) +

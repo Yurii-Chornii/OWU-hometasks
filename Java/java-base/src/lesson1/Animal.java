@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Animal {
     private String kind;
     private boolean isHomePet;
@@ -65,7 +67,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Animal{" +
+        return "lesson1.Animal{" +
                 "kind='" + kind + '\'' +
                 ", isHomePet=" + isHomePet +
                 ", height=" + height +

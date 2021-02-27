@@ -1,3 +1,5 @@
+package lesson1;
+
 public class Wallet {
     private String type;
     private int sum;
@@ -28,7 +30,7 @@ public class Wallet {
 
     @Override
     public String toString() {
-        return "Wallet{" +
+        return "lesson1.Wallet{" +
                 "type='" + type + '\'' +
                 ", sum=" + sum +
                 '}';
